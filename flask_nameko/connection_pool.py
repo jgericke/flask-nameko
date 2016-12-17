@@ -1,5 +1,5 @@
 from datetime import datetime, timedelta
-from Queue import Queue, Empty
+from queue import Queue, Empty
 from threading import Lock
 from .errors import ClientUnavailableError
 

@@ -58,7 +58,7 @@ class FlaskPooledClusterRpcProxy(PooledClusterRpcProxy):
 
     def init_app(self, app):
         config = dict()
-        for key, val in app.config.iteritems():
+        for key, val in app.config.items():
             match = re.match(r"NAMEKO\_(?P<name>.*)", key)
             if match:
                 config[match.group('name')] = val
